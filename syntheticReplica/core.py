@@ -3,9 +3,9 @@
 __all__ = ['PreviewFore', 'SyntheticImageBuild']
 
 # Cell
-from imagesim.dirView import *
-from imagesim.display import *
-from imagesim.utils import *
+from .dirView import *
+from .display import *
+from .utils import *
 
 import collections
 import matplotlib.pyplot as plt
