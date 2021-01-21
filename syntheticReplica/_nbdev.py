@@ -2,7 +2,10 @@
 
 __all__ = ["index", "modules", "custom_doc_links", "git_url"]
 
-index = {"openImg": "02_display.ipynb",
+index = {"PreviewFore": "00_core.ipynb",
+         "SyntheticImageBuild": "00_core.ipynb",
+         "UtilsBuildLinearCoord": "01_utils.ipynb",
+         "openImg": "02_display.ipynb",
          "imageSize": "02_display.ipynb",
          "displayImage": "02_display.ipynb",
          "displayTarBarImage": "02_display.ipynb",
@@ -17,7 +20,9 @@ index = {"openImg": "02_display.ipynb",
          "rmDir": "03_dirView.ipynb",
          "showDirInf": "03_dirView.ipynb"}
 
-modules = ["display.py",
+modules = ["core.py",
+           "utils.py",
+           "display.py",
            "dirView.py"]
 
 doc_url = "https://chho-work.github.io/syntheticReplica/"
