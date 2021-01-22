@@ -60,6 +60,7 @@ class PreviewFore(UtilsBuildLinearCoord):
         plt.imshow(image_show)
         plt.show()
 
+    # Todo, show image size
     def adPto(self, index:str, init_pto:list, expand_x=1, expand_y=1) -> None:
         df_addPto = pd.read_csv(self.dataframe_path, index_col=0)
         x_pto = init_pto[0]
