@@ -23,7 +23,7 @@ from skimage import measure
 class PreviewFore(UtilsBuildLinearCoord):
     path_dir: Path
     file_csv: str
-    file_image: Path
+    file_image: str
     dataframe_path: Path = field(init=False, repr=False)
     path_image: Path = field(init=False, repr=False)
 

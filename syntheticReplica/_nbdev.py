@@ -18,12 +18,15 @@ index = {"PreviewFore": "00_core.ipynb",
          "rmFile": "03_dirView.ipynb",
          "rmFileExt": "03_dirView.ipynb",
          "rmDir": "03_dirView.ipynb",
-         "showDirInf": "03_dirView.ipynb"}
+         "showDirInf": "03_dirView.ipynb",
+         "randomCoordinates": "04_generate_coordinate.ipynb",
+         "generateRandCoord": "04_generate_coordinate.ipynb"}
 
 modules = ["core.py",
            "utils.py",
            "display.py",
-           "dirView.py"]
+           "dirView.py",
+           "generate_coordinate.py"]
 
 doc_url = "https://chho-work.github.io/syntheticReplica/"
 
