@@ -11,6 +11,9 @@ entries:
       url: /
     - output: web,pdf
       title: Title
+      url: display.html
+    - output: web,pdf
+      title: Remove File
       url: dirView.html
     output: web
     title: syntheticReplica

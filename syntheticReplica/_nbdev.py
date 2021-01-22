@@ -9,7 +9,16 @@ index = {"PreviewFore": "00_core.ipynb",
          "imageSize": "02_display.ipynb",
          "displayImage": "02_display.ipynb",
          "displayTarBarImage": "02_display.ipynb",
-         "displayGridRandom": "02_display.ipynb"}
+         "displayGridRandom": "02_display.ipynb",
+         "mkDir": "03_dirView.ipynb",
+         "additionalMssg": "03_dirView.ipynb",
+         "fileCount": "03_dirView.ipynb",
+         "listFile": "03_dirView.ipynb",
+         "itemize": "03_dirView.ipynb",
+         "rmFile": "03_dirView.ipynb",
+         "rmFileExt": "03_dirView.ipynb",
+         "rmDir": "03_dirView.ipynb",
+         "showDirInf": "03_dirView.ipynb"}
 
 modules = ["core.py",
            "utils.py",
