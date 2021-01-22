@@ -3,6 +3,7 @@
 __all__ = ['randomCoordinates', 'generateRandCoord']
 
 # Cell
+from pathlib import Path
 import random
 import pandas as pd
 

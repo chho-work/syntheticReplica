@@ -6,6 +6,7 @@ __all__ = ['PreviewFore', 'SyntheticImageBuild']
 from .dirView import *
 from .display import *
 from .utils import *
+from .generate_coordinate import *
 
 import collections
 import matplotlib.pyplot as plt
