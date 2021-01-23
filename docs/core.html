@@ -50,14 +50,12 @@ nb_path: "00_core.ipynb"
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>/content/drive/My Drive/Colab Notebooks/github/syntheticReplica
-00_core.ipynb		      assets	       MANIFEST.in
-01_utils.ipynb		      CONTRIBUTING.md  README.md
-02_display.ipynb	      docs	       settings.ini
-03_dirView.ipynb	      images	       setup.py
-04_generate_coordinate.ipynb  index.ipynb      syntheticReplica
-05_imageTools.ipynb	      LICENSE
-06_toolsCOCO.ipynb	      Makefile
+<pre>/content/drive/My Drive/Colab Notebooks/github
+biovision			     lessons_learned
+colab_helper_imagesim.ipynb	     nbdev_colab_helper-biovision.ipynb
+colab_helper_syntheticReplica.ipynb  sample_nb
+imageReplica			     syntheticReplica
+imagesim
 </pre>
 </div>
 </div>
@@ -111,9 +109,9 @@ nb_path: "00_core.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h2 id="SyntheticImageBuild" class="doc_header"><code>class</code> <code>SyntheticImageBuild</code><a href="" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>SyntheticImageBuild</code>(<strong><code>image_id</code></strong>:<code>int</code>, <strong><code>fname_train</code></strong>:<code>str</code>, <strong><code>path_train</code></strong>:<code>Path</code>, <strong><code>original_background</code></strong>:<code>Path</code>, <strong><code>path_annotation_file</code></strong>:<code>Path</code>, <strong><code>is_crowd</code></strong>:<code>int</code>=<em><code>0</code></em>, <strong><code>category_zone</code></strong>:<code>int</code>=<em><code>0</code></em>, <strong><code>category_disk</code></strong>:<code>int</code>=<em><code>1</code></em>)</p>
+<h2 id="SyntheticImageBuild" class="doc_header"><code>class</code> <code>SyntheticImageBuild</code><a href="" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>SyntheticImageBuild</code>(<strong><code>image_id</code></strong>:<code>int</code>, <strong><code>fname_train</code></strong>:<code>str</code>, <strong><code>path_train</code></strong>:<code>Path</code>, <strong><code>original_background</code></strong>:<code>Path</code>, <strong><code>path_annotation_file</code></strong>:<code>Path</code>, <strong><code>fore_zone</code></strong>:<code>Path</code>, <strong><code>fore_disk</code></strong>:<code>Path</code>, <strong><code>is_crowd</code></strong>:<code>int</code>=<em><code>0</code></em>, <strong><code>category_zone</code></strong>:<code>int</code>=<em><code>0</code></em>, <strong><code>category_disk</code></strong>:<code>int</code>=<em><code>1</code></em>)</p>
 </blockquote>
-<p>SyntheticImageBuild(image_id:int, fname_train:str, path_train:pathlib.Path, original_background:pathlib.Path, path_annotation_file:pathlib.Path, is_crowd:int=0, category_zone:int=0, category_disk:int=1)</p>
+<p>SyntheticImageBuild(image_id:int, fname_train:str, path_train:pathlib.Path, original_background:pathlib.Path, path_annotation_file:pathlib.Path, fore_zone:pathlib.Path, fore_disk:pathlib.Path, is_crowd:int=0, category_zone:int=0, category_disk:int=1)</p>
 
 </div>
 

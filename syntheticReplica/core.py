@@ -11,6 +11,7 @@ from .imageTools import *
 from .toolsCOCO import *
 
 import collections
+import json
 import matplotlib.pyplot as plt
 import numpy as np
 np.warnings.filterwarnings('ignore', category=np.VisibleDeprecationWarning)
@@ -201,7 +202,7 @@ class SyntheticImageBuild:
         cat_1 = categories_dict['categories'][1]
         return [cat_0, cat_1]
 
-    def JSON2COCO(self, json_fname):
+    def json2coco(self, path_dir:Path, json_fname:str):
         coco_json = {"images":[], "categories":[], "annotations":[]}
         coco_json['images'].append(self._imageJSON())
         coco_json['categories'].append(self._catJSON()[0])
@@ -214,7 +215,7 @@ class SyntheticImageBuild:
 
         # Save to image annotation in coco_annotation directory.
         json_coco = json.loads(json.dumps(coco_json, indent=4))
-        synthetic_json = coco_annot_path.joinpath(json_fname)
+        synthetic_json = path_dir.joinpath(json_fname)
         with open(synthetic_json, 'w') as coco:
             json.dump(json_coco, coco, indent=4)
 
