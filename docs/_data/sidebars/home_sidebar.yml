@@ -11,7 +11,7 @@ entries:
       url: /
     - output: web,pdf
       title: Title
-      url: display.html
+      url: toolsCOCO.html
     - output: web,pdf
       title: Remove File
       url: dirView.html

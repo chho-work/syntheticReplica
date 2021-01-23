@@ -17,7 +17,7 @@ from pathlib import Path
 
 
 # Optional, to view the output mask
-def viewMask(path_image:Path, path_mask:Path, new_mask:NoneType):
+def viewMask(path_image:Path, path_mask:Path, new_mask):
     fname = path_image.stem + ".png"
     mask_path = path_mask.joinpath(fname)
     new_mask.save(mask_path)
@@ -54,7 +54,7 @@ def compositeBuild(new_fore, back, new_mask, fname, train_path):
     # Composite image is blended from a foreground, background and mask, all of the same size.
     composite_img = Image.composite(new_fore, back, new_mask)
     # Save the new composited image.
-    path_composite = train_path.joinpath(fname_train)
+    path_composite = train_path.joinpath(fname)
     composite_img.save(path_composite)
     return new_mask
 
