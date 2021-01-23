@@ -20,13 +20,25 @@ index = {"PreviewFore": "00_core.ipynb",
          "rmDir": "03_dirView.ipynb",
          "showDirInf": "03_dirView.ipynb",
          "randomCoordinates": "04_generate_coordinate.ipynb",
-         "generateRandCoord": "04_generate_coordinate.ipynb"}
+         "generateRandCoord": "04_generate_coordinate.ipynb",
+         "viewMask": "05_imageTools.ipynb",
+         "findCenter": "05_imageTools.ipynb",
+         "findDiskCoord": "05_imageTools.ipynb",
+         "preComposite": "05_imageTools.ipynb",
+         "compositeBuild": "05_imageTools.ipynb",
+         "findContours": "05_imageTools.ipynb",
+         "contours2Segmentations": "05_imageTools.ipynb",
+         "seg2BBoxArea": "05_imageTools.ipynb",
+         "findCoord": "05_imageTools.ipynb",
+         "compositeImage": "05_imageTools.ipynb",
+         "imgCompSegBbox": "05_imageTools.ipynb"}
 
 modules = ["core.py",
            "utils.py",
            "display.py",
            "dirView.py",
-           "generate_coordinate.py"]
+           "generate_coordinate.py",
+           "imageTools.py"]
 
 doc_url = "https://chho-work.github.io/syntheticReplica/"
 

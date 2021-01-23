@@ -13,12 +13,13 @@ import matplotlib.pyplot as plt
 import numpy as np
 np.warnings.filterwarnings('ignore', category=np.VisibleDeprecationWarning)
 import pandas as pd
+import random
 
 from dataclasses import dataclass, field
 from pathlib import Path
-from PIL import Image
-from shapely.geometry import Polygon, MultiPolygon
-from skimage import measure
+# from PIL import Image
+# from shapely.geometry import Polygon, MultiPolygon
+# from skimage import measure
 
 @dataclass
 class PreviewFore(UtilsBuildLinearCoord):
@@ -82,7 +83,7 @@ class PreviewFore(UtilsBuildLinearCoord):
 
 # Todo: add parameters for multiple supercategory, category_id, category_name
 @dataclass
-class SyntheticImageBuild():
+class SyntheticImageBuild:
     image_id: int
     fname_train: str
     path_train: Path
@@ -98,7 +99,8 @@ class SyntheticImageBuild():
         self.back_img_size = imageSize(str(self.original_background))
         self.index_name_list, self.coordinates_list = randomCoordinates(self.path_annotation_file)
 
-    def buildImage(self):
+
+    def buildImage(self, fore_zone, fore_disk):
         foreground_sequence = [fore_zone, fore_disk, fore_disk]
         counter = 0
         result = []
@@ -116,39 +118,39 @@ class SyntheticImageBuild():
                 #print(f'length 1 {_pick[0]}')
                 if counter == 0:
                     # back = background_original
-                    bbox, area, segmentation, index_name  = imgCompSegBbox(_pick[0], coord, self.back_img_size, self.original_background, fname_train, train_path, self.index_name_list[i])
+                    bbox, area, segmentation, index_name  = imgCompSegBbox(_pick[0], coord, self.back_img_size, self.original_background, self.fname_train, self.path_train, self.index_name_list[i])
                     counter += 1
                     result.append([segmentation, self.is_crowd, area, self.image_id, bbox, self.category_disk, counter])
                 elif counter >= 1:
                     # back = background_train
-                    bbox, area, segmentation, index_name = imgCompSegBbox(_pick[0], coord, self.back_img_size, self.synthetic_train_path, fname_train, train_path, self.index_name_list[i])
+                    bbox, area, segmentation, index_name = imgCompSegBbox(_pick[0], coord, self.back_img_size, self.synthetic_train_path, self.fname_train, self.path_train, self.index_name_list[i])
                     counter += 1
-                    result.append([segmentation, self.is_crowd, area, image_id, bbox, self.category_disk, counter])
+                    result.append([segmentation, self.is_crowd, area, self.image_id, bbox, self.category_disk, counter])
 
             elif len(pick_size) == 2:
                 #print(f'length 2 {_pick}')
                 # starts with background_original
                 if counter == 0:
                     # background_original, _pick[0]
-                    bbox_zone, area_zone, segmentation_zone, index_name_zone = imgCompSegBbox(_pick[0], coord, self.back_img_size, self.original_background, fname_train, train_path, self.index_name_list[i])
+                    bbox_zone, area_zone, segmentation_zone, index_name_zone = imgCompSegBbox(_pick[0], coord, self.back_img_size, self.original_background, self.fname_train, self.path_train, self.index_name_list[i])
                     counter += 1
                     result.append([segmentation_zone, self.is_crowd, area_zone, self.image_id, bbox_zone, self.category_zone, counter])
 
                     coord_disk = findCoord(_pick, coord)
-                    bbox_disk, area_disk, segmentation_disk, index_name_disk = imgCompSegBbox(_pick[1], coord_disk, self.back_img_size, self.synthetic_train_path, fname_train, train_path, self.index_name_list[i])
+                    bbox_disk, area_disk, segmentation_disk, index_name_disk = imgCompSegBbox(_pick[1], coord_disk, self.back_img_size, self.synthetic_train_path, self.fname_train, self.path_train, self.index_name_list[i])
                     counter += 1
                     result.append([segmentation_disk, self.is_crowd, area_disk, self.image_id, bbox_disk, self.category_disk, counter])
 
                 # starts with background_train
                 elif counter >= 1:
                     # background_train, pick[0]
-                    bbox_zone, area_zone, segmentation_zone, index_name_zone = imgCompSegBbox(_pick[0], coord, self.back_img_size, self.synthetic_train_path, fname_train, train_path, self.index_name_list[i])
+                    bbox_zone, area_zone, segmentation_zone, index_name_zone = imgCompSegBbox(_pick[0], coord, self.back_img_size, self.synthetic_train_path, self.fname_train, self.path_train, self.index_name_list[i])
                     counter += 1
                     result.append([segmentation_zone, self.is_crowd, area_zone, self.image_id, bbox_zone, self.category_zone, counter])
 
                     # background_train, pick[1]
                     coord_disk = findCoord(_pick, coord)
-                    bbox_disk, area_disk, segmentation_disk, index_name_disk = imgCompSegBbox(_pick[1], coord_disk, self.back_img_size, self.synthetic_train_path, fname_train, train_path, self.index_name_list[i])
+                    bbox_disk, area_disk, segmentation_disk, index_name_disk = imgCompSegBbox(_pick[1], coord_disk, self.back_img_size, self.synthetic_train_path, self.fname_train, self.path_train, self.index_name_list[i])
                     counter += 1
                     result.append([segmentation_disk, self.is_crowd, area_disk, self.image_id, bbox_disk, self.category_disk, counter])
         return result
