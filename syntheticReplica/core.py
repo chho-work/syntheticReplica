@@ -8,8 +8,7 @@ from .display import *
 from .utils import *
 from .generate_coordinate import *
 from .imageTools import *
-
-from syntheticReplica import toolsCOCO
+from .toolsCOCO import *
 
 import collections
 import matplotlib.pyplot as plt
@@ -87,12 +86,14 @@ class PreviewFore(UtilsBuildLinearCoord):
 # Todo: add parameters for multiple supercategory, category_id, category_name
 @dataclass
 class SyntheticImageBuild:
-    image_id: int
-    fname_train: str
-    path_train: Path
-    original_background: Path
-    path_annotation_file: Path
-    synthetic_train_path: Path = field(init=False, repr=False)
+    image_id: int # synthetic image id
+    fname_train: str # file name of synthetic image
+    path_train: Path # path to directory in which to strore synthetic images
+    original_background: Path # path to directory where petri(background) images are stored
+    path_annotation_file: Path # path to file where annotation file is stored
+    fore_zone: Path # path where zone(foreground) images are stored
+    fore_disk: Path # path where disk(foreground) images are stored
+    synthetic_train_path: Path = field(init=False, repr=False) # path_train + fname_train
     is_crowd: int = field(default=0)
     category_zone: int = field(default=0)
     category_disk: int = field(default=1)
@@ -103,8 +104,8 @@ class SyntheticImageBuild:
         self.index_name_list, self.coordinates_list = randomCoordinates(self.path_annotation_file)
 
 
-    def buildImage(self, fore_zone, fore_disk):
-        foreground_sequence = [fore_zone, fore_disk, fore_disk]
+    def buildImage(self):
+        foreground_sequence = [self.fore_zone, self.fore_disk, self.fore_disk]
         counter = 0
         result = []
 
