@@ -218,5 +218,3 @@ class SyntheticImageBuild:
         synthetic_json = path_dir.joinpath(json_fname)
         with open(synthetic_json, 'w') as coco:
             json.dump(json_coco, coco, indent=4)
-
-        return coco_json

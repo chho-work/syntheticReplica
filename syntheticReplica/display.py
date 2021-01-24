@@ -29,7 +29,7 @@ def displayImage(path_dir:Path, figsize:tuple=(3, 3)) -> None:
     plt.show()
 
 # Display image in TarBar format
-def displayTarBarImage(path_dir:Path, first:int, last:int, figsize:tuple=(3, 3)) -> None:
+def displayTarBarImage(path_dir:Path, first:int, last:int, render_background=False, figsize:tuple=(3, 3)) -> None:
     """
         Display image sequence w/Colab widget TarBar (to use only in Colab).
         Args
@@ -45,7 +45,7 @@ def displayTarBarImage(path_dir:Path, first:int, last:int, figsize:tuple=(3, 3))
     tb_plt = widgets.TabBar([str(i) for i in range(first, last)], location='start')
 
     for base_0 in range(0, last-first):
-        with tb_plt.output_to(base_0, select=False):
+        with tb_plt.output_to(base_0, select=render_background):
             print(f'File name: {Path(_enum_items[base_0][1].name)}')
             print(f'Image Size: {imageSize(Path(_enum_items[base_0][1]))} (H x W)')
             displayImage(Path(_enum_items[base_0][1]), figsize=figsize)
