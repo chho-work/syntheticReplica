@@ -13,7 +13,7 @@ entries:
       title: Title
       url: toolsCOCO.html
     - output: web,pdf
-      title: Remove File
+      title: Directory Tools
       url: dirView.html
     output: web
     title: syntheticReplica
