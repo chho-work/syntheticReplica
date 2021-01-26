@@ -13,6 +13,9 @@ entries:
       title: Title
       url: toolsCOCO.html
     - output: web,pdf
+      title: Display Image
+      url: display.html
+    - output: web,pdf
       title: Directory Tools
       url: dirView.html
     output: web

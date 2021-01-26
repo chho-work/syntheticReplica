@@ -3,7 +3,6 @@
 __all__ = ['openImg', 'imageSize', 'displayImage', 'displayTarBarImage', 'displayGridRandom']
 
 # Cell
-
 from google.colab import widgets
 from .dirView import *
 from itertools import islice
@@ -12,14 +11,21 @@ from PIL import Image
 import matplotlib.pyplot as plt
 import numpy as np
 
+# Cell
 # open image - add to display.py
 def openImg(path_image:str):
     return Image.open(path_image)
 
+# Cell
+from nbdev.export import notebook2script
+notebook2script("02_display.ipynb")
+
+# Cell
 def imageSize(path_image:str) -> tuple:
     image = openImg(path_image)
     return image.size
 
+# Cell
 # Display image
 def displayImage(path_dir:Path, figsize:tuple=(3, 3)) -> None:
     img = str(path_dir)
@@ -28,6 +34,7 @@ def displayImage(path_dir:Path, figsize:tuple=(3, 3)) -> None:
     plt.imshow(image_show)
     plt.show()
 
+# Cell
 # Display image in TarBar format
 def displayTarBarImage(path_dir:Path, first:int, last:int, start_last=False, figsize:tuple=(3, 3)) -> None:
     """
@@ -50,6 +57,9 @@ def displayTarBarImage(path_dir:Path, first:int, last:int, start_last=False, fig
             print(f'Image Size: {imageSize(Path(_enum_items[base_0][1]))} (H x W)')
             displayImage(Path(_enum_items[base_0][1]), figsize=figsize)
 
+
+
+# Cell
 # Display image in Random format
 def displayGridRandom(path_dir:Path, total_img:int, grid_row:int=3, grid_col:int=3, figsize:tuple=(3,3)) -> None:
     """

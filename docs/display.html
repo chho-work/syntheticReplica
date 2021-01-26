@@ -1,13 +1,13 @@
 ---
 
-title: Title
+title: Display Image
 
 
 keywords: fastai
 sidebar: home_sidebar
 
-
-
+summary: "Display images utilities."
+description: "Display images utilities."
 nb_path: "02_display.ipynb"
 ---
 <!--
@@ -25,168 +25,6 @@ nb_path: "02_display.ipynb"
     {% raw %}
     
 <div class="cell border-box-sizing code_cell rendered">
-
-</div>
-    {% endraw %}
-
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-
-</div>
-    {% endraw %}
-
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-<div class="output_markdown rendered_html output_subarea ">
-<h4 id="openImg" class="doc_header"><code>openImg</code><a href="__main__.py#L12" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>openImg</code>(<strong><code>path_image</code></strong>:<code>str</code>)</p>
-</blockquote>
-
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-    {% endraw %}
-
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-<div class="output_markdown rendered_html output_subarea ">
-<h4 id="imageSize" class="doc_header"><code>imageSize</code><a href="__main__.py#L15" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>imageSize</code>(<strong><code>path_image</code></strong>:<code>str</code>)</p>
-</blockquote>
-
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-    {% endraw %}
-
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-<div class="output_markdown rendered_html output_subarea ">
-<h4 id="displayImage" class="doc_header"><code>displayImage</code><a href="__main__.py#L20" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>displayImage</code>(<strong><code>path_dir</code></strong>:<code>Path</code>, <strong><code>figsize</code></strong>:<code>tuple</code>=<em><code>(3, 3)</code></em>)</p>
-</blockquote>
-
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-    {% endraw %}
-
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-<div class="output_markdown rendered_html output_subarea ">
-<h4 id="displayTarBarImage" class="doc_header"><code>displayTarBarImage</code><a href="__main__.py#L28" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>displayTarBarImage</code>(<strong><code>path_dir</code></strong>:<code>Path</code>, <strong><code>first</code></strong>:<code>int</code>, <strong><code>last</code></strong>:<code>int</code>, <strong><code>start_last</code></strong>=<em><code>False</code></em>, <strong><code>figsize</code></strong>:<code>tuple</code>=<em><code>(3, 3)</code></em>)</p>
-</blockquote>
-<p>Display image sequence w/Colab widget TarBar (to use only in Colab).
-Args<br>
-    path_dir    : path to image directory
-    first       : select first image(inclusive) to be diplayed in the sequence of images
-    last        : select last image(exclusive) to be diplayed in the sequence of images
-    figsize     : H,W of figure size to be displayed 
-Return 
-    None</p>
-
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-    {% endraw %}
-
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-<div class="output_markdown rendered_html output_subarea ">
-<h4 id="displayGridRandom" class="doc_header"><code>displayGridRandom</code><a href="__main__.py#L50" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>displayGridRandom</code>(<strong><code>path_dir</code></strong>:<code>Path</code>, <strong><code>total_img</code></strong>:<code>int</code>, <strong><code>grid_row</code></strong>:<code>int</code>=<em><code>3</code></em>, <strong><code>grid_col</code></strong>:<code>int</code>=<em><code>3</code></em>, <strong><code>figsize</code></strong>:<code>tuple</code>=<em><code>(3, 3)</code></em>)</p>
-</blockquote>
-<p>Display random selected images w/Colab widget Grid (to use only in Colab).
-Args<br>
-    path_dir    : path to image directory
-    total_img   : total number of images to be displayed
-    row         : select number of grid row
-    col         : select number of grid column
-    figsize     : H,W of figure size to be displayed<br>
-Return 
-    None</p>
-
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-    {% endraw %}
-
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">nbdev.export</span> <span class="kn">import</span> <span class="n">notebook2script</span>
-<span class="n">notebook2script</span><span class="p">(</span><span class="s2">&quot;02_display.ipynb&quot;</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
 
 <div class="output_wrapper">
 <div class="output">
@@ -208,17 +46,20 @@ Return
     {% raw %}
     
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input">
 
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">nbdev.cli</span> <span class="kn">import</span> <span class="n">nbdev_build_docs</span>
-<span class="n">nbdev_build_docs</span><span class="p">()</span>
-</pre></div>
+</div>
+    {% endraw %}
 
-    </div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
 </div>
-</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
 
 <div class="output_wrapper">
 <div class="output">
@@ -226,20 +67,174 @@ Return
 <div class="output_area">
 
 
-<div class="output_html rendered_html output_subarea ">
+<div class="output_markdown rendered_html output_subarea ">
+<h4 id="openImg" class="doc_header"><code>openImg</code><a href="https://github.com/chho-work/syntheticReplica/tree/master/syntheticReplica/display.py#L16" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>openImg</code>(<strong><code>path_image</code></strong>:<code>str</code>)</p>
+</blockquote>
 
 </div>
 
 </div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
 
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>converting: /content/drive/My Drive/Colab Notebooks/github/syntheticReplica/02_display.ipynb
-Warning: Some of your Notebooks use the same title ([&#39;Title&#39;, &#39;Title&#39;, &#39;Title&#39;, &#39;Directory Tools&#39;, &#39;Title&#39;, &#39;Title&#39;, &#39;Title&#39;]).
-converting /content/drive/My Drive/Colab Notebooks/github/syntheticReplica/index.ipynb to README.md
+<pre>Converted 02_display.ipynb.
 </pre>
 </div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h4 id="imageSize" class="doc_header"><code>imageSize</code><a href="https://github.com/chho-work/syntheticReplica/tree/master/syntheticReplica/display.py#L24" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>imageSize</code>(<strong><code>path_image</code></strong>:<code>str</code>)</p>
+</blockquote>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h4 id="displayImage" class="doc_header"><code>displayImage</code><a href="https://github.com/chho-work/syntheticReplica/tree/master/syntheticReplica/display.py#L30" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>displayImage</code>(<strong><code>path_dir</code></strong>:<code>Path</code>, <strong><code>figsize</code></strong>:<code>tuple</code>=<em><code>(3, 3)</code></em>)</p>
+</blockquote>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h4 id="displayTarBarImage" class="doc_header"><code>displayTarBarImage</code><a href="https://github.com/chho-work/syntheticReplica/tree/master/syntheticReplica/display.py#L39" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>displayTarBarImage</code>(<strong><code>path_dir</code></strong>:<code>Path</code>, <strong><code>first</code></strong>:<code>int</code>, <strong><code>last</code></strong>:<code>int</code>, <strong><code>start_last</code></strong>=<em><code>False</code></em>, <strong><code>figsize</code></strong>:<code>tuple</code>=<em><code>(3, 3)</code></em>)</p>
+</blockquote>
+<p>Display image sequence w/Colab widget TarBar (to use only in Colab).
+Args
+    path_dir    : path to image directory
+    first       : select first image(inclusive) to be diplayed in the sequence of images
+    last        : select last image(exclusive) to be diplayed in the sequence of images
+    figsize     : H,W of figure size to be displayed
+Return
+    None</p>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h4 id="displayGridRandom" class="doc_header"><code>displayGridRandom</code><a href="https://github.com/chho-work/syntheticReplica/tree/master/syntheticReplica/display.py#L64" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>displayGridRandom</code>(<strong><code>path_dir</code></strong>:<code>Path</code>, <strong><code>total_img</code></strong>:<code>int</code>, <strong><code>grid_row</code></strong>:<code>int</code>=<em><code>3</code></em>, <strong><code>grid_col</code></strong>:<code>int</code>=<em><code>3</code></em>, <strong><code>figsize</code></strong>:<code>tuple</code>=<em><code>(3, 3)</code></em>)</p>
+</blockquote>
+<p>Display random selected images w/Colab widget Grid (to use only in Colab).
+Args
+    path_dir    : path to image directory
+    total_img   : total number of images to be displayed
+    row         : select number of grid row
+    col         : select number of grid column
+    figsize     : H,W of figure size to be displayed
+Return
+    None</p>
+
+</div>
+
 </div>
 
 </div>
