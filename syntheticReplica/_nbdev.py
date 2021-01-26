@@ -31,18 +31,14 @@ index = {"PreviewFore": "00_core.ipynb",
          "seg2BBoxArea": "05_imageTools.ipynb",
          "findCoord": "05_imageTools.ipynb",
          "compositeImage": "05_imageTools.ipynb",
-         "imgCompSegBbox": "05_imageTools.ipynb",
-         "addAnnotDict": "06_toolsCOCO.ipynb",
-         "addImagesDict": "06_toolsCOCO.ipynb",
-         "addCatDict": "06_toolsCOCO.ipynb"}
+         "imgCompSegBbox": "05_imageTools.ipynb"}
 
 modules = ["core.py",
            "utils.py",
            "display.py",
            "dirView.py",
            "generate_coordinate.py",
-           "imageTools.py",
-           "toolsCOCO.py"]
+           "imageTools.py"]
 
 doc_url = "https://chho-work.github.io/syntheticReplica/"
 
