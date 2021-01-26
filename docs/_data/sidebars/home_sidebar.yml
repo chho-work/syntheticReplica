@@ -10,7 +10,7 @@ entries:
       title: Overview
       url: /
     - output: web,pdf
-      title: Title
+      title: Build Synthetic Image
       url: core.html
     - output: web,pdf
       title: Display Image
