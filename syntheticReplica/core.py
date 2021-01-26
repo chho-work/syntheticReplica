@@ -20,10 +20,8 @@ import random
 
 from dataclasses import dataclass, field
 from pathlib import Path
-# from PIL import Image
-# from shapely.geometry import Polygon, MultiPolygon
-# from skimage import measure
 
+# Cell
 @dataclass
 class PreviewFore(UtilsBuildLinearCoord):
     path_dir: Path
@@ -84,6 +82,8 @@ class PreviewFore(UtilsBuildLinearCoord):
         update_init_pto, update_expand_x, update_expand_y = UtilsBuildLinearCoord.col2List(self.dataframe_path)
         self.petriAnnot(update_init_pto, update_expand_x, update_expand_y)
 
+
+# Cell
 # Todo: add parameters for multiple supercategory, category_id, category_name
 @dataclass
 class SyntheticImageBuild:
@@ -202,6 +202,7 @@ class SyntheticImageBuild:
         cat_1 = categories_dict['categories'][1]
         return [cat_0, cat_1]
 
+    # Convert JSON to COCO format
     def json2coco(self, path_dir:Path, json_fname:str):
         coco_json = {"images":[], "categories":[], "annotations":[]}
         coco_json['images'].append(self._imageJSON())

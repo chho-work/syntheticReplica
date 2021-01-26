@@ -32,40 +32,23 @@ nb_path: "00_core.ipynb"
     {% raw %}
     
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">cd</span> ..
-<span class="o">!</span>ls
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>/content/drive/My Drive/Colab Notebooks/github
-biovision			     lessons_learned
-colab_helper_imagesim.ipynb	     nbdev_colab_helper-biovision.ipynb
-colab_helper_syntheticReplica.ipynb  sample_nb
-imageReplica			     syntheticReplica
-imagesim
-</pre>
-</div>
-</div>
-
-</div>
-</div>
 
 </div>
     {% endraw %}
 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Positioning-Foreground-Image"><strong>Positioning Foreground Image</strong><a class="anchor-link" href="#Positioning-Foreground-Image"> </a></h3><p>Select positions to place foreground images.<br></p>
+<p>Class Args:</p>
+<ul>
+<li>path_dir     : path to directory</li>
+<li>file_csv     : annotation file name</li>
+<li>file_image   : image name </li>
+</ul>
+
+</div>
+</div>
+</div>
     {% raw %}
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -84,7 +67,7 @@ imagesim
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h2 id="PreviewFore" class="doc_header"><code>class</code> <code>PreviewFore</code><a href="" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>PreviewFore</code>(<strong><code>path_dir</code></strong>:<code>Path</code>, <strong><code>file_csv</code></strong>:<code>str</code>, <strong><code>file_image</code></strong>:<code>str</code>) :: <a href="/syntheticReplica/utils.html#UtilsBuildLinearCoord"><code>UtilsBuildLinearCoord</code></a></p>
+<h2 id="PreviewFore" class="doc_header"><code>class</code> <code>PreviewFore</code><a href="https://github.com/chho-work/syntheticReplica/tree/master/syntheticReplica/core.py#L26" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>PreviewFore</code>(<strong><code>path_dir</code></strong>:<code>Path</code>, <strong><code>file_csv</code></strong>:<code>str</code>, <strong><code>file_image</code></strong>:<code>str</code>) :: <a href="/syntheticReplica/utils.html#UtilsBuildLinearCoord"><code>UtilsBuildLinearCoord</code></a></p>
 </blockquote>
 <p>PreviewFore(path_dir:pathlib.Path, file_csv:str, file_image:str)</p>
 
@@ -98,6 +81,33 @@ imagesim
 </div>
     {% endraw %}
 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Build-Synthetic-Image"><strong>Build Synthetic Image</strong><a class="anchor-link" href="#Build-Synthetic-Image"> </a></h3><p>Build synthetic image.<br></p>
+<p>Class Args:</p>
+<ul>
+<li>image_id            : synthetic image id</li>
+<li>fname_train         : file name of synthetic image</li>
+<li>path_train          : path to directory in which to strore synthetic images</li>
+<li>original_background : path to directory where petri(background) images are stored</li>
+<li>path_annotation_file: path to file where annotation file is stored</li>
+<li>fore_zone           : path where zone(foreground) images are stored</li>
+<li>fore_disk           : path where disk(foreground) images are stored  </li>
+<li>is_crowd            : default=0 </li>
+<li>category_zone       : default=0</li>
+<li>category_disk       : default=1</li>
+</ul>
+
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    {% endraw %}
+
     {% raw %}
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -109,7 +119,7 @@ imagesim
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h2 id="SyntheticImageBuild" class="doc_header"><code>class</code> <code>SyntheticImageBuild</code><a href="" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>SyntheticImageBuild</code>(<strong><code>image_id</code></strong>:<code>int</code>, <strong><code>fname_train</code></strong>:<code>str</code>, <strong><code>path_train</code></strong>:<code>Path</code>, <strong><code>original_background</code></strong>:<code>Path</code>, <strong><code>path_annotation_file</code></strong>:<code>Path</code>, <strong><code>fore_zone</code></strong>:<code>Path</code>, <strong><code>fore_disk</code></strong>:<code>Path</code>, <strong><code>is_crowd</code></strong>:<code>int</code>=<em><code>0</code></em>, <strong><code>category_zone</code></strong>:<code>int</code>=<em><code>0</code></em>, <strong><code>category_disk</code></strong>:<code>int</code>=<em><code>1</code></em>)</p>
+<h2 id="SyntheticImageBuild" class="doc_header"><code>class</code> <code>SyntheticImageBuild</code><a href="https://github.com/chho-work/syntheticReplica/tree/master/syntheticReplica/core.py#L89" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>SyntheticImageBuild</code>(<strong><code>image_id</code></strong>:<code>int</code>, <strong><code>fname_train</code></strong>:<code>str</code>, <strong><code>path_train</code></strong>:<code>Path</code>, <strong><code>original_background</code></strong>:<code>Path</code>, <strong><code>path_annotation_file</code></strong>:<code>Path</code>, <strong><code>fore_zone</code></strong>:<code>Path</code>, <strong><code>fore_disk</code></strong>:<code>Path</code>, <strong><code>is_crowd</code></strong>:<code>int</code>=<em><code>0</code></em>, <strong><code>category_zone</code></strong>:<code>int</code>=<em><code>0</code></em>, <strong><code>category_disk</code></strong>:<code>int</code>=<em><code>1</code></em>)</p>
 </blockquote>
 <p>SyntheticImageBuild(image_id:int, fname_train:str, path_train:pathlib.Path, original_background:pathlib.Path, path_annotation_file:pathlib.Path, fore_zone:pathlib.Path, fore_disk:pathlib.Path, is_crowd:int=0, category_zone:int=0, category_disk:int=1)</p>
 

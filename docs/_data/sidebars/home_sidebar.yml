@@ -11,7 +11,7 @@ entries:
       url: /
     - output: web,pdf
       title: Title
-      url: imageTools.html
+      url: core.html
     - output: web,pdf
       title: Display Image
       url: display.html

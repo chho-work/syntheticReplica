@@ -8,7 +8,7 @@ import random
 import pandas as pd
 
 
-def randomCoordinates(file_csv:Path):
+def randomCoordinates(file_csv:Path) -> list:
     """
         Select andomly a coordinate from a sequence of coordinates.
         The sequence of coordinates are created from data points stored in a "csv" format file.
