@@ -32,22 +32,26 @@ nb_path: "03_dirView.ipynb"
     {% raw %}
     
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">pathlib</span> <span class="kn">import</span> <span class="n">Path</span>
-<span class="kn">import</span> <span class="nn">random</span>
-<span class="kn">import</span> <span class="nn">shutil</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
 
 </div>
     {% endraw %}
 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Create-Directory">Create Directory<a class="anchor-link" href="#Create-Directory"> </a></h3><p>Create several directories with different names.<br></p>
+<p>Args:</p>
+<ul>
+<li>base_path    : path to base directory</li>
+<li>dir_list     : list of directory names to be created </li>
+</ul>
+<p>Return:</p>
+<ul>
+<li>None</li>
+</ul>
+
+</div>
+</div>
+</div>
     {% raw %}
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -81,142 +85,14 @@ nb_path: "03_dirView.ipynb"
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="mkDir">mkDir<a class="anchor-link" href="#mkDir"> </a></h4><blockquote><p>Create new directory</p>
-</blockquote>
-
-</div>
-</div>
-</div>
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-
-</div>
-    {% endraw %}
-
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-<div class="output_markdown rendered_html output_subarea ">
-<h4 id="additionalMssg" class="doc_header"><code>additionalMssg</code><a href="https://github.com/chho-work/syntheticReplica/tree/master/syntheticReplica/dirView.py#L22" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>additionalMssg</code>(<strong><code>count</code></strong>:<code>int</code>)</p>
-</blockquote>
-
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-    {% endraw %}
-
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-
-</div>
-    {% endraw %}
-
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-<div class="output_markdown rendered_html output_subarea ">
-<h4 id="fileCount" class="doc_header"><code>fileCount</code><a href="https://github.com/chho-work/syntheticReplica/tree/master/syntheticReplica/dirView.py#L32" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>fileCount</code>(<strong><code>path_dir</code></strong>:<code>Path</code>)</p>
-</blockquote>
-
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-    {% endraw %}
-
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-
-</div>
-    {% endraw %}
-
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-<div class="output_markdown rendered_html output_subarea ">
-<h4 id="listFile" class="doc_header"><code>listFile</code><a href="https://github.com/chho-work/syntheticReplica/tree/master/syntheticReplica/dirView.py#L41" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>listFile</code>(<strong><code>path_dir</code></strong>:<code>Path</code>)</p>
-</blockquote>
-
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-    {% endraw %}
-
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-
-</div>
-    {% endraw %}
-
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-<div class="output_markdown rendered_html output_subarea ">
-<h4 id="itemize" class="doc_header"><code>itemize</code><a href="https://github.com/chho-work/syntheticReplica/tree/master/syntheticReplica/dirView.py#L48" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>itemize</code>(<strong><code>path_dir</code></strong>:<code>Path</code>)</p>
-</blockquote>
-
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-    {% endraw %}
-
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Remove-File">Remove File<a class="anchor-link" href="#Remove-File"> </a></h1><ul>
-<li>rmFile(id:list, path<em>dir:Path) -&gt; None</em>:<br> <blockquote><p><em>Purpose</em>:function to remove a single file(i.e .txt, .py, etc).</p>
-</blockquote>
-</li>
+<h3 id="File-Count">File Count<a class="anchor-link" href="#File-Count"> </a></h3><p>Count number of files within a directory.<br></p>
+<p>Args:</p>
+<ul>
+<li>path_dir     : path to directory </li>
+</ul>
+<p>Return:</p>
+<ul>
+<li>int</li>
 </ul>
 
 </div>
@@ -240,7 +116,7 @@ nb_path: "03_dirView.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="rmFile" class="doc_header"><code>rmFile</code><a href="https://github.com/chho-work/syntheticReplica/tree/master/syntheticReplica/dirView.py#L55" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>rmFile</code>(<strong><code>id</code></strong>:<code>list</code>, <strong><code>path_dir</code></strong>:<code>Path</code>)</p>
+<h4 id="fileCount" class="doc_header"><code>fileCount</code><a href="https://github.com/chho-work/syntheticReplica/tree/master/syntheticReplica/dirView.py#L30" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>fileCount</code>(<strong><code>path_dir</code></strong>:<code>Path</code>)</p>
 </blockquote>
 
 </div>
@@ -255,10 +131,15 @@ nb_path: "03_dirView.ipynb"
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Remove-File-w/-Specific-Extension">Remove File w/ Specific Extension<a class="anchor-link" href="#Remove-File-w/-Specific-Extension"> </a></h1><ul>
-<li>rmFileExt(path<em>dir:Path, extension:str )  -&gt; None</em>":<br> <blockquote><p><em>Purpose</em>:function to remove any files with a specific extension(i.e. ".txt").</p>
-</blockquote>
-</li>
+<h3 id="Remove-File">Remove File<a class="anchor-link" href="#Remove-File"> </a></h3><p>Remove single file, example: ".txt", ".py", etc).<br></p>
+<p>Args:</p>
+<ul>
+<li>id           : file number from showDirInf() output </li>
+<li>path_dir     : path to directory </li>
+</ul>
+<p>Return:</p>
+<ul>
+<li>None</li>
 </ul>
 
 </div>
@@ -282,7 +163,7 @@ nb_path: "03_dirView.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="rmFileExt" class="doc_header"><code>rmFileExt</code><a href="https://github.com/chho-work/syntheticReplica/tree/master/syntheticReplica/dirView.py#L64" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>rmFileExt</code>(<strong><code>path_dir</code></strong>:<code>Path</code>, <strong><code>extension</code></strong>:<code>str</code>)</p>
+<h4 id="rmFile" class="doc_header"><code>rmFile</code><a href="https://github.com/chho-work/syntheticReplica/tree/master/syntheticReplica/dirView.py#L47" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>rmFile</code>(<strong><code>id</code></strong>:<code>list</code>, <strong><code>path_dir</code></strong>:<code>Path</code>)</p>
 </blockquote>
 
 </div>
@@ -297,10 +178,15 @@ nb_path: "03_dirView.ipynb"
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Remove-Directory">Remove Directory<a class="anchor-link" href="#Remove-Directory"> </a></h1><ul>
-<li>rmDir(path<em>dir:Path, dir:str) -&gt; None</em>:<br> <blockquote><p><em>Purpose</em>:use this function to remove unwanted directory such as Colab autosave generated folder, ".ipynb_checkpoint".<br></p>
-</blockquote>
-</li>
+<h3 id="Remove-File-w/-Specific-Extension">Remove File w/ Specific Extension<a class="anchor-link" href="#Remove-File-w/-Specific-Extension"> </a></h3><p>Remove any files with a specific extension, for example: ".txt".<br></p>
+<p>Args:</p>
+<ul>
+<li>path_dir     : path to directory</li>
+<li>extension    : extension type </li>
+</ul>
+<p>Return:</p>
+<ul>
+<li>None</li>
 </ul>
 
 </div>
@@ -324,7 +210,7 @@ nb_path: "03_dirView.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="rmDir" class="doc_header"><code>rmDir</code><a href="https://github.com/chho-work/syntheticReplica/tree/master/syntheticReplica/dirView.py#L80" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>rmDir</code>(<strong><code>path_dir</code></strong>:<code>Path</code>, <strong><code>dir</code></strong>:<code>str</code>)</p>
+<h4 id="rmFileExt" class="doc_header"><code>rmFileExt</code><a href="https://github.com/chho-work/syntheticReplica/tree/master/syntheticReplica/dirView.py#L54" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>rmFileExt</code>(<strong><code>path_dir</code></strong>:<code>Path</code>, <strong><code>extension</code></strong>:<code>str</code>)</p>
 </blockquote>
 
 </div>
@@ -339,10 +225,15 @@ nb_path: "03_dirView.ipynb"
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Display-Directory-Information">Display Directory Information<a class="anchor-link" href="#Display-Directory-Information"> </a></h1><ul>
-<li>showDirInf(path_dir:Path, suffix<em>list:list) -&gt; None</em>:<br><blockquote><p><em>Purpose</em>:list files of a directory given the path.         &gt; In the "_suffix<em>list:list</em>" parameter, list the different types of image extensions that you want to display.  For example: ['.jpg', '.jpeg', '.png'].  If the code detects other formats, it will notify with a message.  By default, it includes "jpg" and "png".<br></p>
-</blockquote>
-</li>
+<h3 id="Remove-Directory">Remove Directory<a class="anchor-link" href="#Remove-Directory"> </a></h3><p>Remove unwanted directory or subdirectory, for example: Colab autosave generated folder, ".ipynb_checkpoint".<br></p>
+<p>Args:</p>
+<ul>
+<li>path_dir     : path to directory</li>
+<li>dir          : directory name </li>
+</ul>
+<p>Return:</p>
+<ul>
+<li>None</li>
 </ul>
 
 </div>
@@ -366,7 +257,7 @@ nb_path: "03_dirView.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="showDirInf" class="doc_header"><code>showDirInf</code><a href="https://github.com/chho-work/syntheticReplica/tree/master/syntheticReplica/dirView.py#L92" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>showDirInf</code>(<strong><code>path_dir</code></strong>:<code>Path</code>, <strong><code>suffix_list</code></strong>:<code>list</code>=<em><code>['.jpg', '.jpeg', '.png']</code></em>)</p>
+<h4 id="rmDir" class="doc_header"><code>rmDir</code><a href="https://github.com/chho-work/syntheticReplica/tree/master/syntheticReplica/dirView.py#L67" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>rmDir</code>(<strong><code>path_dir</code></strong>:<code>Path</code>, <strong><code>dir</code></strong>:<code>str</code>)</p>
 </blockquote>
 
 </div>
@@ -381,7 +272,7 @@ nb_path: "03_dirView.ipynb"
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Show file paths, names, types and indicate wheather to remove.<br></p>
+<h4 id="Show-Directory-Information">Show Directory Information<a class="anchor-link" href="#Show-Directory-Information"> </a></h4><p>Show file paths, names, types and indicate wheather to remove.<br></p>
 <p>Args:</p>
 <ul>
 <li>path_dir     : path to image directory<br></li>
@@ -395,6 +286,37 @@ nb_path: "03_dirView.ipynb"
 </div>
 </div>
 </div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h4 id="showDirInf" class="doc_header"><code>showDirInf</code><a href="https://github.com/chho-work/syntheticReplica/tree/master/syntheticReplica/dirView.py#L76" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>showDirInf</code>(<strong><code>path_dir</code></strong>:<code>Path</code>, <strong><code>suffix_list</code></strong>:<code>list</code>=<em><code>['.jpg', '.jpeg', '.png']</code></em>)</p>
+</blockquote>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
 </div>
  
 
