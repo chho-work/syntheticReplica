@@ -90,14 +90,6 @@ def rmDir(path_dir:Path, dir:str) -> None:
 # Cell
 # Display image file information
 def showDirInf(path_dir:Path, suffix_list:list = ['.jpg', '.jpeg', '.png']) -> None:
-    """
-        Show file paths, names, types and indicate wheather to remove.
-        Args
-            path_dir     : path to image directory
-            suffix_list  : list of acceptable image suffixes or extensions(remove if not listed)
-        Return
-            None
-    """
 
     count = 0
     enum = itemize(path_dir)
