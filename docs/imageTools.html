@@ -26,20 +26,6 @@ nb_path: "05_imageTools.ipynb"
     
 <div class="cell border-box-sizing code_cell rendered">
 
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Converted 02_display.ipynb.
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
     {% endraw %}
 
@@ -109,7 +95,7 @@ nb_path: "05_imageTools.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="findDiskCoord" class="doc_header"><code>findDiskCoord</code><a href="__main__.py#L28" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>findDiskCoord</code>(<strong><code>path_image</code></strong>:<code>Path</code>, <strong><code>center_x</code></strong>, <strong><code>center_y</code></strong>)</p>
+<h4 id="findDiskCoord" class="doc_header"><code>findDiskCoord</code><a href="__main__.py#L28" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>findDiskCoord</code>(<strong><code>path_image</code></strong>:<code>Path</code>, <strong><code>center_x</code></strong>:<code>int</code>, <strong><code>center_y</code></strong>:<code>int</code>)</p>
 </blockquote>
 
 </div>
@@ -133,7 +119,7 @@ nb_path: "05_imageTools.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="preComposite" class="doc_header"><code>preComposite</code><a href="__main__.py#L34" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>preComposite</code>(<strong><code>path_image</code></strong>:<code>Path</code>, <strong><code>coord</code></strong>:<code>tuple</code>, <strong><code>img_size</code></strong>:<code>tuple</code>, <strong><code>back</code></strong>:<code>Path</code>, <strong><code>index_name</code></strong>:<code>str</code>)</p>
+<h4 id="preComposite" class="doc_header"><code>preComposite</code><a href="__main__.py#L35" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>preComposite</code>(<strong><code>path_image</code></strong>:<code>Path</code>, <strong><code>coord</code></strong>:<code>tuple</code>, <strong><code>img_size</code></strong>:<code>tuple</code>, <strong><code>back</code></strong>:<code>Path</code>, <strong><code>index_name</code></strong>:<code>str</code>)</p>
 </blockquote>
 
 </div>
@@ -157,7 +143,7 @@ nb_path: "05_imageTools.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="compositeBuild" class="doc_header"><code>compositeBuild</code><a href="__main__.py#L48" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>compositeBuild</code>(<strong><code>new_fore</code></strong>, <strong><code>back</code></strong>, <strong><code>new_mask</code></strong>, <strong><code>fname</code></strong>, <strong><code>train_path</code></strong>)</p>
+<h4 id="compositeBuild" class="doc_header"><code>compositeBuild</code><a href="__main__.py#L50" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>compositeBuild</code>(<strong><code>new_fore</code></strong>, <strong><code>back</code></strong>, <strong><code>new_mask</code></strong>, <strong><code>fname</code></strong>:<code>str</code>, <strong><code>train_path</code></strong>:<code>Path</code>)</p>
 </blockquote>
 
 </div>
@@ -181,7 +167,7 @@ nb_path: "05_imageTools.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="findContours" class="doc_header"><code>findContours</code><a href="__main__.py#L56" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>findContours</code>(<strong><code>new_mask</code></strong>, <strong><code>coord</code></strong>)</p>
+<h4 id="findContours" class="doc_header"><code>findContours</code><a href="__main__.py#L59" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>findContours</code>(<strong><code>new_mask</code></strong>, <strong><code>coord</code></strong>)</p>
 </blockquote>
 
 </div>
@@ -205,7 +191,7 @@ nb_path: "05_imageTools.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="contours2Segmentations" class="doc_header"><code>contours2Segmentations</code><a href="__main__.py#L69" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>contours2Segmentations</code>(<strong><code>contours_array</code></strong>, <strong><code>tolerance</code></strong>:<code>int</code>=<em><code>1.0</code></em>, <strong><code>preserve_topology</code></strong>:<code>bool</code>=<em><code>False</code></em>)</p>
+<h4 id="contours2Segmentations" class="doc_header"><code>contours2Segmentations</code><a href="__main__.py#L73" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>contours2Segmentations</code>(<strong><code>contours_array</code></strong>, <strong><code>tolerance</code></strong>:<code>int</code>=<em><code>1.0</code></em>, <strong><code>preserve_topology</code></strong>:<code>bool</code>=<em><code>False</code></em>)</p>
 </blockquote>
 
 </div>
@@ -229,7 +215,7 @@ nb_path: "05_imageTools.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="seg2BBoxArea" class="doc_header"><code>seg2BBoxArea</code><a href="__main__.py#L81" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>seg2BBoxArea</code>(<strong><code>polygons</code></strong>)</p>
+<h4 id="seg2BBoxArea" class="doc_header"><code>seg2BBoxArea</code><a href="__main__.py#L86" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>seg2BBoxArea</code>(<strong><code>polygons</code></strong>)</p>
 </blockquote>
 
 </div>
@@ -260,7 +246,7 @@ nb_path: "05_imageTools.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="findCoord" class="doc_header"><code>findCoord</code><a href="https://github.com/chho-work/syntheticReplica/tree/master/syntheticReplica/imageTools.py#L96" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>findCoord</code>(<strong><code>images</code></strong>:<code>list</code>, <strong><code>coord</code></strong>:<code>tuple</code>)</p>
+<h4 id="findCoord" class="doc_header"><code>findCoord</code><a href="https://github.com/chho-work/syntheticReplica/tree/master/syntheticReplica/imageTools.py#L101" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>findCoord</code>(<strong><code>images</code></strong>:<code>list</code>, <strong><code>coord</code></strong>:<code>tuple</code>)</p>
 </blockquote>
 
 </div>
@@ -284,7 +270,7 @@ nb_path: "05_imageTools.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="compositeImage" class="doc_header"><code>compositeImage</code><a href="https://github.com/chho-work/syntheticReplica/tree/master/syntheticReplica/imageTools.py#L101" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>compositeImage</code>(<strong><code>path_image</code></strong>:<code>Path</code>, <strong><code>coord</code></strong>:<code>tuple</code>, <strong><code>img_size</code></strong>:<code>tuple</code>, <strong><code>back</code></strong>:<code>Path</code>, <strong><code>fname_train</code></strong>:<code>str</code>, <strong><code>train_path</code></strong>:<code>Path</code>, <strong><code>index_name</code></strong>:<code>str</code>)</p>
+<h4 id="compositeImage" class="doc_header"><code>compositeImage</code><a href="https://github.com/chho-work/syntheticReplica/tree/master/syntheticReplica/imageTools.py#L106" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>compositeImage</code>(<strong><code>path_image</code></strong>:<code>Path</code>, <strong><code>coord</code></strong>:<code>tuple</code>, <strong><code>img_size</code></strong>:<code>tuple</code>, <strong><code>back</code></strong>:<code>Path</code>, <strong><code>fname_train</code></strong>:<code>str</code>, <strong><code>train_path</code></strong>:<code>Path</code>, <strong><code>index_name</code></strong>:<code>str</code>)</p>
 </blockquote>
 
 </div>
@@ -308,7 +294,7 @@ nb_path: "05_imageTools.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="imgCompSegBbox" class="doc_header"><code>imgCompSegBbox</code><a href="https://github.com/chho-work/syntheticReplica/tree/master/syntheticReplica/imageTools.py#L106" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>imgCompSegBbox</code>(<strong><code>path_image</code></strong>:<code>Path</code>, <strong><code>coord</code></strong>:<code>tuple</code>, <strong><code>img_size</code></strong>:<code>tuple</code>, <strong><code>back</code></strong>:<code>Path</code>, <strong><code>fname_train</code></strong>:<code>str</code>, <strong><code>train_path</code></strong>:<code>Path</code>, <strong><code>index_name</code></strong>:<code>str</code>)</p>
+<h4 id="imgCompSegBbox" class="doc_header"><code>imgCompSegBbox</code><a href="https://github.com/chho-work/syntheticReplica/tree/master/syntheticReplica/imageTools.py#L111" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>imgCompSegBbox</code>(<strong><code>path_image</code></strong>:<code>Path</code>, <strong><code>coord</code></strong>:<code>tuple</code>, <strong><code>img_size</code></strong>:<code>tuple</code>, <strong><code>back</code></strong>:<code>Path</code>, <strong><code>fname_train</code></strong>:<code>str</code>, <strong><code>train_path</code></strong>:<code>Path</code>, <strong><code>index_name</code></strong>:<code>str</code>)</p>
 </blockquote>
 
 </div>
