@@ -35,7 +35,7 @@ def randomCoordinates(file_csv:Path) -> list:
     return _index_names, _random_ptos
 
 # Todo: amplify this to general use.
-def generateRandCoord(generate_size:int, axis:str, init_x:int, init_y:int):
+def generateRandCoord(generate_size:int, axis:str, init_x:int, init_y:int) -> tuple:
     if generate_size > 0:
         if axis=="x":
             _coordinate = [[init_x + i, init_y] for i in range(generate_size)]
