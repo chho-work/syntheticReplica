@@ -2,4 +2,26 @@
 
 
 
-![real vs synthetic]("https:/drive.google.com/uc?id=1M0lr670G7hp6tOlYo3b_6ydDpfiP1LYA")
+```
+from IPython.display import Image 
+Image(url="https://github.com/chho-work/syntheticReplica/blob/main/assets/real_synthetic.jpg?raw=True")
+```
+
+
+
+
+<img src="https://github.com/chho-work/syntheticReplica/blob/main/assets/real_synthetic.jpg?raw=True"/>
+
+
+
+```
+ide
+Image(url="https://github.com/chho-work/syntheticReplica/blob/main/assets/synthetic_image_explain.jpg?raw=True")
+```
+
+
+
+
+<img src="https://github.com/chho-work/syntheticReplica/blob/main/assets/synthetic_image_explain.jpg?raw=True"/>
+
+
