@@ -5,6 +5,5 @@
 ## Real vs Synthetic Images
 > Sample of synthetic images
 
-## Issues When Buid
-
-![positioning]("/assets/positioning.jpg")
+## Issues When Building Synthetic Images
+> Two problems may occur
