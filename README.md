@@ -1,5 +1,5 @@
 # Generate Synthetic Images 
-> README under construction
+> Positioning foreground images
 
 
 
@@ -10,9 +10,24 @@
 
 
 ```
-#Image(url="https://github.com/chho-work/syntheticReplica/blob/main/assets/synthetic_image_explain.jpg?raw=True")
+
+Image(url="https://github.com/chho-work/syntheticReplica/blob/main/assets/synthetic_image_explain.jpg?raw=True")
 ```
 
+
+
+
+<img src="https://github.com/chho-work/syntheticReplica/blob/main/assets/synthetic_image_explain.jpg?raw=True"/>
+
+
+
 ```
-#Image(url="https://github.com/chho-work/syntheticReplica/blob/main/assets/positioning.jpg?raw=True")
+Image(url="https://github.com/chho-work/syntheticReplica/blob/main/assets/positioning.jpg?raw=True")
 ```
+
+
+
+
+<img src="https://github.com/chho-work/syntheticReplica/blob/main/assets/positioning.jpg?raw=True"/>
+
+
