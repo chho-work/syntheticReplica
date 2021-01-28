@@ -1,5 +1,5 @@
 # **Antibiogram Composite Images**  
-> [Link]()<br>
+> Building composite images
 
 
 A project with a start up in the micro-biology industry led me to write
@@ -9,8 +9,13 @@ The one on the top is called foreground and the bottom one, the background(Figur
 
 Composite images are very useful, especially when real images are in shortage.  It was ideal, in my case, for prototyping!   And also, it is cheaper and sometimes easier to obtain than real images.  Nonetheless, hardly composite images can fully substitute real images.  Probably, a combination of both would be ideal for certain scenario.<br> 
 
+
+* [Training Detectron2 using composite antibiogram images]()<br>
+* Compositing images methods and utility functions: ["sample_nb_1.ipynb"](), ["sample_nb_2.ipynb"]()<br>
+* [What is "antibiogram"?]()<br>
+
 ### **Real vs Composite Images**
-> **Sample of composite images of antibiograms.**
+> Sample of composite images of antibiograms
 
 
 
@@ -20,7 +25,7 @@ Composite images are very useful, especially when real images are in shortage.  
 
 
 ### **Building Composite Images in Practice**
-> Problems when making composite images**
+> Bottlenecks when making composite images
 
 When creating composite images, I found that it was often the case that I wanted to have the flexibility to choose the number of foreground images. To paste a single  image, I first needed to find a coordinate, the location in the background image.  And obviously,  for each additional image that I choose to paste, more coordinates were required. Time spent generating coordinates soon increased exponentially and it became cumbersome as I built more composite images.   Ideally, this process should be automated.<br>
 
@@ -28,15 +33,8 @@ Initially, I wrote a script to generate random coordinates.  Each random output(
 
 However, after generating some random coordinates, I realized that this wasn’t going be feasible as some generated coordinates were too close to each other leading foreground images to overlap.  In addition, some few generated coordinates were located out of the petri dish.  Creating a synthetic image with disks and zone of inhibition outside of a petri dish would be out of context and inconsistent with real images(Figure 2).<br>
 
-
-
-
-<img src="https://github.com/chho-work/syntheticReplica/blob/main/assets/composite_image_explain.jpg?raw=True"/>
-
-
-
 ### **Positioning Foreground Images**
-> **The solution, decide in advance the location to paste foreground images**
+> The solution, decide in advance the location to paste foreground images
 
 After few more tests, it became clear to me that to solve the above constraints, for each composite image I needed to generate random coordinates that falls within a smaller boundary(range), rather than the image size range.  The boundary would first, limit the locations in which each image would appear and avoid image overlap when it happens. Second, it restricts the areas in which each disk and zone of inhibition would appear, it would locate them inside of the petri dish, making the synthetic image more realistic.<br>
 
