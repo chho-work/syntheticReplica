@@ -1,13 +1,13 @@
 ---
 
-title: Antibiogram Composite Images  
+title: **Antibiogram Composite Images**  
 
 
 keywords: fastai
 sidebar: home_sidebar
 
-summary: "**Overview**"
-description: "**Overview**"
+summary: "* ![Link]()"
+description: "* ![Link]()"
 nb_path: "index.ipynb"
 ---
 <!--
@@ -41,7 +41,7 @@ some simple form of tooling to automate the production of composite images.  Ima
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Real-vs-Composite-Images">Real vs Composite Images<a class="anchor-link" href="#Real-vs-Composite-Images"> </a></h3><blockquote><p><strong>Sample of composite images of antibiograms.</strong></p>
+<h3 id="Real-vs-Composite-Images"><strong>Real vs Composite Images</strong><a class="anchor-link" href="#Real-vs-Composite-Images"> </a></h3><blockquote><p><strong>Sample of composite images of antibiograms.</strong></p>
 </blockquote>
 
 </div>
@@ -71,7 +71,7 @@ some simple form of tooling to automate the production of composite images.  Ima
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Issues-When-Building-Synthetic-Images">Issues When Building Synthetic Images<a class="anchor-link" href="#Issues-When-Building-Synthetic-Images"> </a></h3><blockquote><p>Two problems may occur</p>
+<h3 id="Issues-When-Building-Synthetic-Images">Issues When Building Synthetic Images<a class="anchor-link" href="#Issues-When-Building-Synthetic-Images"> </a></h3><blockquote><p>Problems when making composite images.</p>
 </blockquote>
 
 </div>
@@ -116,8 +116,8 @@ some simple form of tooling to automate the production of composite images.  Ima
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>After few more tests, it became clear to me that to solve the above constraints, for each composite image I needed to generate random coordinates that falls within a smaller boundary(range), rather than the image size range.  The boundary would first, limit the locations in which each image would appear and avoid image overlap(at least in most of cases. Second, it restricts the areas in which each disk and zone of inhibition would appear, it would locate them inside of the petri dish, making the synthetic image more realistic.<br></p>
-<p>The illustration below depicts the idea.  In this example, there are two boundaries(B1, B2), each for a different foreground image.  Each boundary is limited by the size of horizontal(expand_x) and a vertical(expand_y) lines.  The size of each line is the range of possible coordinates.  Therefore, the coordinate to paste the foreground image in boundary B1 will be selected randomly from the sequence of coordinates under list B1. And same applies to B2 boundary.<br></p>
+<p>After few more tests, it became clear to me that to solve the above constraints, for each composite image I needed to generate random coordinates that falls within a smaller boundary(range), rather than the image size range.  The boundary would first, limit the locations in which each image would appear and avoid image overlap when it happens. Second, it restricts the areas in which each disk and zone of inhibition would appear, it would locate them inside of the petri dish, making the synthetic image more realistic.<br></p>
+<p>The illustration below depicts the idea.  In this example, there are two boundaries(B1, B2), each for a different foreground image.  Each boundary is limited by the size of horizontal(expand_x) and a vertical(expand_y) lines.  The size of each line is the range of possible coordinates.  The coordinate to paste the foreground image in boundary B1 will be selected randomly from the sequence of coordinates under list B1. And same applies to B2 boundary.<br></p>
 
 </div>
 </div>
