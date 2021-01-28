@@ -1,4 +1,4 @@
-# **Antibiogram Composite Images**  
+# Antibiogram Composite Images  
 > Building composite images
 
 
@@ -14,7 +14,7 @@ Composite images are very useful, especially when real images are in shortage.  
 * Compositing images methods and utility functions: ["sample_nb_1.ipynb"](), ["sample_nb_2.ipynb"]()<br>
 * [What is "antibiogram"?]()<br>
 
-### **Real vs Composite Images**
+## Real vs Composite Images
 > Sample of composite images of antibiograms
 
 
@@ -24,7 +24,7 @@ Composite images are very useful, especially when real images are in shortage.  
 
 
 
-### **Building Composite Images in Practice**
+## Building Composite Images in Practice
 > Bottlenecks when making composite images
 
 When creating composite images, I found that it was often the case that I wanted to have the flexibility to choose the number of foreground images. To paste a single  image, I first needed to find a coordinate, the location in the background image.  And obviously,  for each additional image that I choose to paste, more coordinates were required. Time spent generating coordinates soon increased exponentially and it became cumbersome as I built more composite images.   Ideally, this process should be automated.<br>
@@ -40,7 +40,7 @@ However, after generating some random coordinates, I realized that this wasn’t
 
 
 
-### **Positioning Foreground Images**
+## Positioning Foreground Images
 > The solution, decide in advance the location to paste foreground images
 
 After few more tests, it became clear to me that to solve the above constraints, for each composite image I needed to generate random coordinates that falls within a smaller boundary(range), rather than the image size range.  The boundary would first, limit the locations in which each image would appear and avoid image overlap when it happens. Second, it restricts the areas in which each disk and zone of inhibition would appear, it would locate them inside of the petri dish, making the synthetic image more realistic.<br>
@@ -54,5 +54,5 @@ The illustration below depicts the idea.  In this example, there are two boundar
 
 
 
-### **Try it!**
+## Try It!
 [Link]()
