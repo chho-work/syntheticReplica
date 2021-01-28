@@ -33,6 +33,13 @@ Initially, I wrote a script to generate random coordinates.  Each random output(
 
 However, after generating some random coordinates, I realized that this wasn’t going be feasible as some generated coordinates were too close to each other leading foreground images to overlap.  In addition, some few generated coordinates were located out of the petri dish.  Creating a synthetic image with disks and zone of inhibition outside of a petri dish would be out of context and inconsistent with real images(Figure 2).<br>
 
+
+
+
+<img src="https://github.com/chho-work/syntheticReplica/blob/main/assets/composite_image_explain.jpg?raw=True"/>
+
+
+
 ### **Positioning Foreground Images**
 > The solution, decide in advance the location to paste foreground images
 
