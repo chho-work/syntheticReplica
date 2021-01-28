@@ -1,5 +1,5 @@
 # **Antibiogram Composite Images**  
-> * ![Link]()
+
 
 
 A project with a start up in the micro-biology industry led me to write
@@ -19,7 +19,7 @@ Composite images are very useful, especially when real images are in shortage.  
 
 
 
-### Issues When Building Synthetic Images
+### **Building Composite Images in Practice**
 > Problems when making composite images.
 
 When creating composite images, I found that it was often the case that I wanted to have the flexibility to choose the number of foreground images. To paste a single  image, I first needed to find a coordinate, the location in the background image.  And obviously,  for each additional image that I choose to paste, more coordinates were required. Time spent generating coordinates soon increased exponentially and it became cumbersome as I built more composite images.   Ideally, this process should be automated.<br>
@@ -35,7 +35,8 @@ However, after generating some random coordinates, I realized that this wasn’t
 
 
 
-### Positioning Foreground Images
+### **Positioning Foreground Images**
+> The solution, decide in advance the location to paste foreground images
 
 After few more tests, it became clear to me that to solve the above constraints, for each composite image I needed to generate random coordinates that falls within a smaller boundary(range), rather than the image size range.  The boundary would first, limit the locations in which each image would appear and avoid image overlap when it happens. Second, it restricts the areas in which each disk and zone of inhibition would appear, it would locate them inside of the petri dish, making the synthetic image more realistic.<br>
 
@@ -46,4 +47,25 @@ The illustration below depicts the idea.  In this example, there are two boundar
 
 <img src="https://github.com/chho-work/syntheticReplica/blob/main/assets/positioning.jpg?raw=True"/>
 
+
+
+### **Try it!**
+[Link]()
+
+```
+# %nbdev_hide
+
+from nbdev.cli import nbdev_build_docs
+nbdev_build_docs("'/content/drive/My Drive/Colab Notebooks/github/syntheticReplicaindex.ipynb")
+```
+
+
+
+
+
+    converting: index.ipynb
+    [Errno 21] Is a directory: '/content/drive/My Drive/Colab Notebooks/github/syntheticReplica'
+    Conversion failed on the following:
+    index.ipynb
+    converting /content/drive/My Drive/Colab Notebooks/github/syntheticReplica/index.ipynb to README.md
 
