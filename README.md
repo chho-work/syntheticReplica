@@ -57,9 +57,27 @@ The illustration below depicts the idea.  In this example, there are two boundar
 ## Try It in Google Colab!
 >[Link]()
 
+Position each foreground image:
+* To create a new position, create a new name for "index" and add input new coordinates for init_pro, expand_x(optional) and expand_y(optional).
+* You can view the position of each coordinate created by executing the cell.
+* To update a previously created point, change the index to the name of the point you wish to update and make the approapriate changes.    
+
+
 
 
 
 <img src="https://github.com/chho-work/syntheticReplica/blob/main/assets/positioning_nb.jpg?raw=True"/>
+
+
+
+Make Composite Images:
+* "image_id" numbering must start with number 1, 2, 3, ...
+* To change the name of the file, simply change the name of "fname_train".
+* You can view the names and images for previous created composite images by pressing the numbers in the TarBar.
+
+
+
+
+<img src="https://github.com/chho-work/syntheticReplica/blob/main/assets/build.jpg?raw=True"/>
 
 
