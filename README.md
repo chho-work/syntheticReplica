@@ -56,3 +56,10 @@ The illustration below depicts the idea.  In this example, there are two boundar
 
 ## Try It in Google Colab!
 >[Link]()
+
+
+
+
+<img src="https://github.com/chho-work/syntheticReplica/blob/main/assets/positioning_nb.jpg?raw=True"/>
+
+
