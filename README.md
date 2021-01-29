@@ -54,5 +54,5 @@ The illustration below depicts the idea.  In this example, there are two boundar
 
 
 
-## Try It!
-[Link]()
+## Try It in Google Colab!
+>[Link]()
