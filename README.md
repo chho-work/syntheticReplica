@@ -10,9 +10,14 @@ The one on the top is called foreground and the bottom one, the background(Figur
 Composite images are very useful, especially when real images are in shortage.  It was ideal, in my case, for prototyping!   And also, it is cheaper and sometimes easier to obtain than real images.  Nonetheless, hardly composite images can fully substitute real images.  Probably, a combination of both would be ideal for certain scenario.<br> 
 
 
-* [Training Detectron2 using composite antibiogram images]()<br>
-* Compositing images methods and utility functions: ["sample_nb_1.ipynb"](), ["sample_nb_2.ipynb"]()<br>
-* [What is "antibiogram"?]()<br>
+* [Training Detectron2 using composite antibiogram images]() (Under construction!)<br>
+* Compositing images methods and utility functions:<br> 
+  **Sample_nb_1.ipynb**<br>
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/chho-work/syntheticReplica/blob/main/sample_nbs/Sample_nb_1.ipynb) 
+
+  **Sample_nb_2.ipynb**<br>
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/chho-work/syntheticReplica/blob/main/sample_nbs/Sample_nb_2.ipynb)
+* [What is "antibiogram"?]() (Under construction!)<br>
 
 ## Real vs Composite Images
 > Sample of composite images of antibiograms
@@ -55,7 +60,8 @@ The illustration below depicts the idea.  In this example, there are two boundar
 
 
 ## Try It in Google Colab!
->[Link]()
+**Sample_nb_2.ipynb**<br>
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/chho-work/syntheticReplica/blob/main/sample_nbs/Sample_nb_2.ipynb)
 
 Position each foreground image:
 * To create a new position, create a new name for "index" and add input new coordinates for init_pro, expand_x(optional) and expand_y(optional).
