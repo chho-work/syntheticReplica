@@ -96,8 +96,8 @@ class SyntheticImageBuild:
     fore_disk: Path # path where disk(foreground) images are stored
     synthetic_train_path: Path = field(init=False, repr=False) # path_train + fname_train
     is_crowd: int = field(default=0)
-    category_zone: int = field(default=0)
-    category_disk: int = field(default=1)
+    category_zone: int = field(default=1)
+    category_disk: int = field(default=0)
 
     def __post_init__(self):
         self.synthetic_train_path = Path(self.path_train).joinpath(self.fname_train)
