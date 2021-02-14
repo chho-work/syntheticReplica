@@ -184,13 +184,13 @@ class SyntheticImageBuild:
     def _catJSON(self):
         # First category
         supercategory = "none"
-        id_zone = 0
+        id_zone = 1
         name_zone = "zone"
         category_zone_dict = addCatDict(supercategory, id_zone, name_zone)
         zone_dict = (category_zone_dict['categories'][0])
         # Second category
         supercategory = "none"
-        id_disk = 1
+        id_disk = 0
         name_disk = "disk"
         category_disk_dict = addCatDict(supercategory, id_disk, name_disk)
         disk_dict = (category_disk_dict['categories'][0])
